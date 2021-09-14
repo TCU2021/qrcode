@@ -2,12 +2,12 @@
   <div class="border">
     <div class="container">
       <div class="header">
-        <div class="title">快取餐柜门管理系统</div>
+        <div class="title">快取餐智能外卖柜</div>
       </div>
       <div class="main">
         <div class="leftPart">
-          <div class="text">请使用快取餐扫一扫</div>
-          <div class="text">来扫描右方的二维码</div>
+          <div class="text">请使用快取餐APP</div>
+          <div class="text">扫码取餐</div>
         </div>
         <div class="rightPart" @click="open">
           <div id="qrcode" ref="qrCodeUrl" v-show="!data.isScan"></div>
@@ -34,7 +34,7 @@ export default defineComponent({
     const setQRCode = () => {
       target = document.getElementById("qrcode");
       qrcode = new QRCode(target, {
-        text: "你好，尊敬的快取餐用户",
+        text: "https://www.baidu.com",
         width: 500,
         height: 500,
         colorDark: "#000000",
