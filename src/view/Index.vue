@@ -2,7 +2,7 @@
   <div class="border">
     <div class="container">
       <div class="header">
-        <div class="title">快取餐智能外卖柜</div>
+        <div class="title">快取餐 智能外卖柜</div>
       </div>
       <div class="main">
         <div class="leftPart">
@@ -35,8 +35,8 @@ export default defineComponent({
       target = document.getElementById("qrcode");
       qrcode = new QRCode(target, {
         text: "https://www.baidu.com",
-        width: 500,
-        height: 500,
+        width: 450,
+        height: 450,
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H,
@@ -71,7 +71,7 @@ export default defineComponent({
 .main {
   align-items: center;
   display: flex;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 .title {
   font-size: 100px;
