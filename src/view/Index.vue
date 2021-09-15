@@ -10,8 +10,8 @@
           <div class="text">扫码取餐</div>
         </div>
         <div class="rightPart" @click="open">
-          <div id="qrcode" ref="qrCodeUrl" v-show="!data.isScan"></div>
-          <Result v-show="data.isScan" :isSuccess="false"></Result>
+          <div id="qrcode" ref="qrCodeUrl"></div>
+          <!-- <Result v-show="data.isScan" :isSuccess="false"></Result> -->
         </div>
       </div>
     </div>
@@ -19,12 +19,9 @@
 </template>
 <script lang="ts">
 import QRCode from "qrcode2";
-import Result from "@/view/Result.vue";
 import { defineComponent, onMounted, reactive } from "vue";
 export default defineComponent({
-  components: {
-    Result,
-  },
+  components: {},
   setup() {
     const data = reactive({
       isScan: false,
