@@ -31,7 +31,7 @@ export default defineComponent({
     const setQRCode = () => {
       target = document.getElementById("qrcode");
       qrcode = new QRCode(target, {
-        text: "https://www.baidu.com",
+        text: "http://81.70.2.91:3000/open",
         width: 450,
         height: 450,
         colorDark: "#000000",
