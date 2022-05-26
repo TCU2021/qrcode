@@ -31,7 +31,7 @@ export default defineComponent({
     const setQRCode = () => {
       target = document.getElementById("qrcode");
       qrcode = new QRCode(target, {
-        text: "http://81.70.2.91:3000/open",
+        text: "位置1",
         width: 450,
         height: 450,
         colorDark: "#000000",
